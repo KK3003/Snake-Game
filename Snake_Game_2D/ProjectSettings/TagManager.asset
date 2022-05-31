@@ -11,6 +11,9 @@ TagManager:
   - Shield
   - ScoreBoost
   - SpeedBoost
+  - MassGain
+  - MassBurn
+  - Snake2
   layers:
   - Default
   - TransparentFX
