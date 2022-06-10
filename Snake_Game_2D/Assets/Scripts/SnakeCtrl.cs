@@ -26,6 +26,10 @@ public class SnakeCtrl : MonoBehaviour
      public UIManager uiman;
 
     public GameObject snake2;
+
+
+    public GameObject shieldText, boostText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -166,15 +170,7 @@ public class SnakeCtrl : MonoBehaviour
     }
 
 
-   /* private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Snake2")
-        {
-            uiman.GameOver1();
-        }
-    }
-   */
-
+ 
 
 
 
@@ -267,19 +263,23 @@ public class SnakeCtrl : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         isShieldOn = true;
+        shieldText.SetActive(true);
 
         yield return new WaitForSeconds(20);
         isShieldOn = false;
+        shieldText.SetActive(false);
     }
 
     IEnumerator ScoreBoostdOn()
     {
         yield return new WaitForSeconds(0.1f);
         isScoreBoostOn = true;
+        boostText.SetActive(true);
 
 
         yield return new WaitForSeconds(20);
         isScoreBoostOn = false;
+        boostText.SetActive(false);
     }
 
     IEnumerator SpeedBoostdOn()

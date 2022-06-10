@@ -166,14 +166,7 @@ public class Snake2Ctrl : MonoBehaviour
         }
     }   
 
-   /* private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Snake")
-        {
-            uiman.GameOver1();
-        }
-    }
-   */
+ 
 
 
 

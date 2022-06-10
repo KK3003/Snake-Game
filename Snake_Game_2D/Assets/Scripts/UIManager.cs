@@ -8,11 +8,12 @@ public class UIManager : MonoBehaviour
     public GameObject pausePanel, gameOverPanel, gameOverPanel1, gameOverPanel2;
     public Text scoreT;
     public SnakeCtrl snakectrl;
-
+    public GameObject instruct,instruct1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(instruct, 3);
+        Destroy(instruct1, 3);
     }
 
     // Update is called once per frame
@@ -41,17 +42,4 @@ public class UIManager : MonoBehaviour
        
     }
 
-   /* public void GameOver1()
-    {
-        gameOverPanel1.SetActive(true);
-        scoreT.text = snakectrl.score.ToString();
-        Time.timeScale = 0;
-    }
-    public void GameOver2()
-    {
-        gameOverPanel2.SetActive(true);
-        scoreT.text = snakectrl.score.ToString();
-        Time.timeScale = 0;
-    }
-   */
 }
